@@ -18,6 +18,7 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 
 '''
 거래내역에 메모를 저장합니다.
+- https://docs.popbill.com/easyfinbank/python/api#SaveMemo
 '''
 
 try:

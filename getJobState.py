@@ -18,6 +18,7 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 
 '''
 계좌 거래내역 수집 상태를 확인합니다.
+- https://docs.popbill.com/easyfinbank/python/api#GetJobState
 '''
 
 try:
