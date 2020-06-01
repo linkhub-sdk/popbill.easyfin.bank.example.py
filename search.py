@@ -18,6 +18,7 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 
 '''
 검색조건을 사용하여 수집결과를 조회합니다.
+- https://docs.popbill.com/easyfinbank/python/api#Search
 '''
 
 try:

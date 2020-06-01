@@ -20,6 +20,7 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 '''
 계좌 거래내역 수집을 요청합니다
 - 수집 요청후 반환받은 작업아이디(JobID)의 유효시간은 1시간 입니다.
+- https://docs.popbill.com/easyfinbank/python/api#RequestJob
 '''
 
 try:
