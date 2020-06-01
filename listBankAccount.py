@@ -38,7 +38,15 @@ try:
         print("accountType (계좌유형) : %s" % info.accountType)
         print("state (계좌 정액제 상태) : %s" % info.state)
         print("regDT (등록일시) : %s" % info.regDT)
-        print("memo (메모) : %s" % info.memo+ '\n')
+        print("memo (메모) : %s" % info.memo)
+        print("contractDT (정액제 서비스 시작일시) : %s" % info.contractDT)
+        print("useEndDate (정액제 서비스 종료일) : %s" % info.useEndDate)
+        print("baseDate (자동연장 결제일) : %s" % info.baseDate)
+        print("contractState (정액제 서비스 상태) : %s" % info.contractState)
+        print("closeRequestYN (정액제 서비스 해지신청 여부) : %s" % info.closeRequestYN)
+        print("useRestrictYN (정액제 서비스 사용제한 여부) : %s" % info.useRestrictYN)
+        print("closeOnExpired (정액제 서비스 만료 시 해지 여부) : %s" % info.closeOnExpired)
+        print("unPaidYN (미수금 보유 여부) : %s" % info.unPaidYN+ '\n')
 
 except PopbillException as PE:
     print("Exception Occur : [%d] %s" % (PE.code, PE.message))
