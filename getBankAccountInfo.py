@@ -17,7 +17,7 @@ easyFinBankService.IsTest = testValue.IsTest
 easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 
 '''
-연동회원의 회사정보를 확인합니다.
+팝빌에 등록된 계좌정보를 확인합니다.
 '''
 
 try:
