@@ -15,6 +15,7 @@ except Exception as E:
 easyFinBankService = EasyFinBankService(testValue.LinkID, testValue.SecretKey)
 easyFinBankService.IsTest = testValue.IsTest
 easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
+easyFinBankService.UseStaticIP = testValue.UseStaticIP
 
 '''
 정액제 서비스 신청 팝업 URL을 반환합니다.

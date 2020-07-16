@@ -15,6 +15,7 @@ except Exception as E:
 easyFinBankService = EasyFinBankService(testValue.LinkID, testValue.SecretKey)
 easyFinBankService.IsTest = testValue.IsTest
 easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
+easyFinBankService.UseStaticIP = testValue.UseStaticIP
 
 '''
 팝빌에 등록된 계좌 목록을 확인합니다.

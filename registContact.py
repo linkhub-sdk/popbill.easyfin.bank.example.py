@@ -15,6 +15,7 @@ except Exception as E:
 easyFinBankService = EasyFinBankService(testValue.LinkID, testValue.SecretKey)
 easyFinBankService.IsTest = testValue.IsTest
 easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
+easyFinBankService.UseStaticIP = testValue.UseStaticIP
 
 '''
 연동회원의 담당자를 신규로 등록합니다.

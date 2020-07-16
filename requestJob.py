@@ -15,7 +15,7 @@ except Exception as E:
 easyFinBankService = EasyFinBankService(testValue.LinkID, testValue.SecretKey)
 easyFinBankService.IsTest = testValue.IsTest
 easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
-
+easyFinBankService.UseStaticIP = testValue.UseStaticIP
 
 '''
 계좌 거래내역 수집을 요청합니다

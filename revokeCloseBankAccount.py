@@ -14,6 +14,7 @@ except Exception as E:
 easyFinBankService = EasyFinBankService(testValue.LinkID, testValue.SecretKey)
 easyFinBankService.IsTest = testValue.IsTest
 easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
+easyFinBankService.UseStaticIP = testValue.UseStaticIP
 
 '''
 정액제 해지신청을 취소한다.
