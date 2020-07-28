@@ -33,16 +33,16 @@ try:
     UserID = testValue.testUserID
 
     # 은행코드
-    BankCode = "0048"
+    BankCode = "0039"
 
     # 계좌번호
-    AccountNumber = "131020538645"
+    AccountNumber = "2070064402404"
 
     # 시작일자, 날짜형식(yyyyMMdd)
-    SDate = "20191004"
+    SDate = "20200701"
 
     # 종료일자, 날짜형식(yyyyMMdd)
-    EDate = "20200102"
+    EDate = "20200728"
 
     jobID = easyFinBankService.requestJob(CorpNum, BankCode, AccountNumber, SDate, EDate, UserID)
 

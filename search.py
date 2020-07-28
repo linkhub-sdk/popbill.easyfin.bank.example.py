@@ -32,7 +32,7 @@ try:
     UserID = testValue.testUserID
 
     # 수집요청(requestJob)시 발급받은 작업아이디
-    JobID = "020010215000000004"
+    JobID = "020072810000000001"
 
     # 거래유형 배열, I - 입금 / O - 출금
     TradeType = ["I", "O"]
@@ -56,7 +56,8 @@ try:
     print("total (검색결과 건수) : %s " % response.total)
     print("perPage (페이지당 검색개수) : %s " % response.perPage)
     print("pageNum (페에지 번호) : %s " % response.pageNum)
-    print("pageCount (페이지 개수) : %s \n" % response.pageCount)
+    print("pageCount (페이지 개수) : %s " % response.pageCount)
+    print("lastScrapDT (최종 조회일시) : %s \n" % response.lastScrapDT)
 
     for info in response.list:
         print("\n==============거래내역 정보==============")
