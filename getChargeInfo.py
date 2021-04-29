@@ -16,6 +16,7 @@ easyFinBankService = EasyFinBankService(testValue.LinkID, testValue.SecretKey)
 easyFinBankService.IsTest = testValue.IsTest
 easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
+easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 계좌조회 API 연동서비스 과금정보를 확인합니다.

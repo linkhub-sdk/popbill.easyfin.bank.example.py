@@ -16,6 +16,7 @@ easyFinBankService = EasyFinBankService(testValue.LinkID, testValue.SecretKey)
 easyFinBankService.IsTest = testValue.IsTest
 easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
+easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 파트너의 잔여포인트를 확인합니다.

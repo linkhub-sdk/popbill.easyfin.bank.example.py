@@ -16,6 +16,7 @@ easyFinBankService = EasyFinBankService(testValue.LinkID, testValue.SecretKey)
 easyFinBankService.IsTest = testValue.IsTest
 easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
+easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 팝빌 회원아이디 중복여부를 확인합니다.
