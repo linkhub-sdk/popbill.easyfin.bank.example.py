@@ -36,7 +36,7 @@ try:
     TID = "01912181100000000120191231000001"
 
     # 메모
-    Memo = "20200102-Python"
+    Memo = "20211201-Python"
 
     result = easyFinBankService.saveMemo(CorpNum, TID, Memo, UserID)
 
