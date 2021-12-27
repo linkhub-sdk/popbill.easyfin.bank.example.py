@@ -34,7 +34,7 @@ try:
     # 팝빌회원 아이디
     UserID = testValue.testUserID
 
-    # 은행코드
+    # 기관코드
     BankCode = "0039"
 
     # 계좌번호

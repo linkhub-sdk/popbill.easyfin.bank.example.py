@@ -29,7 +29,7 @@ try:
     # 팝빌회원 사업자번호
     CorpNum = testValue.testCorpNum
 
-    # 은행코드
+    # 기관코드
     # 산업은행-0002 / 기업은행-0003 / 국민은행-0004 /수협은행-0007 / 농협은행-0011 / 우리은행-0020
     # SC은행-0023 / 대구은행-0031 / 부산은행-0032 / 광주은행-0034 / 제주은행-0035 / 전북은행-0037
     # 경남은행-0039 / 새마을금고-0045 / 신협은행-0048 / 우체국-0071 / KEB하나은행-0081 / 신한은행-0088 /씨티은행-0027
@@ -44,7 +44,7 @@ try:
     info = easyFinBankService.getBankAccountInfo(CorpNum, BankCode, AccountNumber, UserID)
 
     print("accountNumber (계좌번호) : %s" % info.accountNumber)
-    print("bankCode (은행코드) : %s" % info.bankCode)
+    print("bankCode (기관코드) : %s" % info.bankCode)
     print("accountName (계좌별칭) : %s" % info.accountName)
     print("accountType (계좌유형) : %s" % info.accountType)
     print("state (계좌 정액제 상태) : %s" % info.state)

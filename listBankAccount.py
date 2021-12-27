@@ -36,7 +36,7 @@ try:
 
     for info in response:
         print("accountNumber (계좌번호) : %s" % info.accountNumber)
-        print("bankCode (은행코드) : %s" % info.bankCode)
+        print("bankCode (기관코드) : %s" % info.bankCode)
         print("accountName (계좌별칭) : %s" % info.accountName)
         print("accountType (계좌유형) : %s" % info.accountType)
         print("state (계좌 정액제 상태) : %s" % info.state)
