@@ -20,6 +20,7 @@ easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 팝빌에 계좌정보를 등록합니다.
+- https://docs.popbill.com/easyfinbank/python/api#RegistBankAccount
 '''
 
 try:

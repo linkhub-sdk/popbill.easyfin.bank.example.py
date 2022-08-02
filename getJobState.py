@@ -36,7 +36,7 @@ try:
     CorpNum = testValue.testCorpNum
 
     # 수집요청(requestJob) 호출시 발급받은 작업아이디
-    jobID = "020010214000000009"
+    jobID = "022080215000000325"
 
     response = easyFinBankService.getJobState(CorpNum, jobID)
 

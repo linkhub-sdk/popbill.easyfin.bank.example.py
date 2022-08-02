@@ -30,7 +30,7 @@ try:
     CorpNum = testValue.testCorpNum
 
     # 수집요청(requestJob)시 발급받은 작업아이디
-    JobID = "020072810000000001"
+    JobID = "022080215000000325"
 
     # 거래유형 배열 ("I" 와 "O" 중 선택, 다중 선택 가능)
     # └ I = 입금 , O = 출금
