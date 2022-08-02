@@ -29,9 +29,6 @@ try:
     # 팝빌회원 사업자번호
     CorpNum = testValue.testCorpNum
 
-    # 팝빌회원 아이디
-    UserID = testValue.testUserID
-
     # 수집요청(requestJob)시 발급받은 작업아이디
     JobID = "020010214000000014"
 
@@ -46,7 +43,7 @@ try:
     # - 미입력시 전체조회
     SearchString = ""
 
-    response = easyFinBankService.summary(CorpNum, JobID, TradeType, SearchString, UserID)
+    response = easyFinBankService.summary(CorpNum, JobID, TradeType, SearchString)
 
 
     print("count (수집 결과 건수) : %s " % response.count)

@@ -29,16 +29,13 @@ try:
     # 팝빌회원 사업자번호
     CorpNum = testValue.testCorpNum
 
-    # 팝빌회원 아이디
-    UserID = testValue.testUserID
-
     # 기관코드
-    BankCode = "0048"
+    BankCode = ""
 
     # 계좌번호
-    AccountNumber = "131020538645"
+    AccountNumber = ""
 
-    response = easyFinBankService.getFlatRateState(CorpNum, BankCode, AccountNumber, UserID)
+    response = easyFinBankService.getFlatRateState(CorpNum, BankCode, AccountNumber)
 
     print("referenceID (계좌아아디) : %s" % response.referenceID)
     print("contractDT (정액제 서비스 시작일시) : %s" % response.contractDT)

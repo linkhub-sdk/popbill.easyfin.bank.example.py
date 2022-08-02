@@ -38,10 +38,7 @@ try:
     # 계좌번호
     AccountNumber = '';
 
-    # 팝빌회원 아이디
-    UserID = testValue.testUserID
-
-    info = easyFinBankService.getBankAccountInfo(CorpNum, BankCode, AccountNumber, UserID)
+    info = easyFinBankService.getBankAccountInfo(CorpNum, BankCode, AccountNumber)
 
     print("accountNumber (계좌번호) : %s" % info.accountNumber)
     print("bankCode (기관코드) : %s" % info.bankCode)

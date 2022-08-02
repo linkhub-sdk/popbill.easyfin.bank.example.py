@@ -31,9 +31,6 @@ try:
     # 팝빌회원 사업자번호
     CorpNum = testValue.testCorpNum
 
-    # 팝빌회원 아이디
-    UserID = testValue.testUserID
-
     # 기관코드
     BankCode = ""
 
@@ -46,7 +43,7 @@ try:
     # 종료일자, 날짜형식(yyyyMMdd)
     EDate = "20220731"
 
-    jobID = easyFinBankService.requestJob(CorpNum, BankCode, AccountNumber, SDate, EDate, UserID)
+    jobID = easyFinBankService.requestJob(CorpNum, BankCode, AccountNumber, SDate, EDate)
 
     print("작업아이디(jobID) : " + jobID)
 

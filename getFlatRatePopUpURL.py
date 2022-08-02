@@ -30,7 +30,10 @@ try:
     # 팝빌회원 사업자번호
     CorpNum = testValue.testCorpNum
 
-    url = easyFinBankService.getFlatRatePopUpURL(CorpNum)
+    # 팝빌회원 아이디
+    UserID = testValue.testUserID
+
+    url = easyFinBankService.getFlatRatePopUpURL(CorpNum, UserID)
 
     print("URL : %s" % url)
 

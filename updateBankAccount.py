@@ -29,9 +29,6 @@ try:
     # 팝빌회원 사업자번호
     CorpNum = testValue.testCorpNum
 
-    # 팝빌회원 아이디
-    UserID = testValue.testUserID
-
     infoObj = BankAccountInfo(
         # 기관코드
         # 산업은행-0002 / 기업은행-0003 / 국민은행-0004 /수협은행-0007 / 농협은행-0011 / 우리은행-0020
@@ -62,7 +59,7 @@ try:
     )
 
 
-    result = easyFinBankService.updateBankAccount(CorpNum, infoObj, UserID)
+    result = easyFinBankService.updateBankAccount(CorpNum, infoObj)
 
     print("처리결과 : [%d] %s" % (result.code, result.message))
 except PopbillException as PE:

@@ -28,9 +28,6 @@ try:
     # 팝빌회원 사업자번호
     CorpNum = testValue.testCorpNum
 
-    # 팝빌회원 아이디
-    UserID = testValue.testUserID
-
     # 기관코드
     # 산업은행-0002 / 기업은행-0003 / 국민은행-0004 /수협은행-0007 / 농협은행-0011 / 우리은행-0020
     # SC은행-0023 / 대구은행-0031 / 부산은행-0032 / 광주은행-0034 / 제주은행-0035 / 전북은행-0037
@@ -46,7 +43,7 @@ try:
     # └ 중도일 경우, 정액제 잔여기간은 일할로 계산되어 포인트 환불(무료 이용기간에 해지하면 전액 환불)
     CloseType = "중도"
 
-    result = easyFinBankService.closeBankAccount(CorpNum, BankCode, AccountNumber, CloseType, UserID)
+    result = easyFinBankService.closeBankAccount(CorpNum, BankCode, AccountNumber, CloseType)
 
     print("처리결과 : [%d] %s" % (result.code, result.message))
 except PopbillException as PE:

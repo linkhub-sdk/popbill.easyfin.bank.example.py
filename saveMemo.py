@@ -29,16 +29,13 @@ try:
     # 팝빌회원 사업자번호
     CorpNum = testValue.testCorpNum
 
-    # 팝빌회원 아이디
-    UserID = testValue.testUserID
-
     # 거래내역 아이디
     TID = "01912181100000000120191231000001"
 
     # 메모
     Memo = "PYTHON 메모 테스트"
 
-    result = easyFinBankService.saveMemo(CorpNum, TID, Memo, UserID)
+    result = easyFinBankService.saveMemo(CorpNum, TID, Memo)
 
     print("처리결과 : [%d] %s" % (result.code, result.message))
 except PopbillException as PE:

@@ -29,13 +29,10 @@ try:
     # 팝빌회원 사업자번호
     CorpNum = testValue.testCorpNum
 
-    # 팝빌회원 아이디
-    UserID = testValue.testUserID
-
     # 담당자 아이디
     contactID = 'testkorea'
 
-    contactInfo = easyFinBankService.getContactInfo(CorpNum, contactID, UserID)
+    contactInfo = easyFinBankService.getContactInfo(CorpNum, contactID)
 
     print("id (아이디) : %s " % contactInfo.id)
     print("personName (담당자 성명) : %s " % contactInfo.personName)

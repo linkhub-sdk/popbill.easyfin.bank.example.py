@@ -29,10 +29,7 @@ try:
     # 팝빌회원 사업자번호
     CorpNum = testValue.testCorpNum
 
-    # 팝빌회원 아이디
-    UserID = testValue.testUserID
-
-    response = easyFinBankService.listBankAccount(CorpNum, UserID)
+    response = easyFinBankService.listBankAccount(CorpNum)
 
     for info in response:
         print("accountNumber (계좌번호) : %s" % info.accountNumber)

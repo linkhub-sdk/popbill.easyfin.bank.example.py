@@ -35,11 +35,8 @@ try:
     # 계좌번호 하이픈('-') 제외
     AccountNumber = ""
 
-    # 팝빌회원 아이디
-    UserID = settings.testUserID
 
-
-    response = easyFinBankService.deleteBankAccount(CorpNum, BankCode, AccountNumber, UserID)
+    response = easyFinBankService.deleteBankAccount(CorpNum, BankCode, AccountNumber)
 
     print("처리결과 : [%d] %s" % (result.code, result.message))
 except PopbillException as PE:

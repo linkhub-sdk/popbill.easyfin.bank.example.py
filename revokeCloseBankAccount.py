@@ -28,9 +28,6 @@ try:
     # 팝빌회원 사업자번호
     CorpNum = testValue.testCorpNum
 
-    # 팝빌회원 아이디
-    UserID = testValue.testUserID
-
     # 기관코드
     # 산업은행-0002 / 기업은행-0003 / 국민은행-0004 /수협은행-0007 / 농협은행-0011 / 우리은행-0020
     # SC은행-0023 / 대구은행-0031 / 부산은행-0032 / 광주은행-0034 / 제주은행-0035 / 전북은행-0037
@@ -40,7 +37,7 @@ try:
     # 계좌번호 하이픈('-') 제외
     AccountNumber = ""
 
-    result = easyFinBankService.revokeCloseBankAccount(CorpNum, BankCode, AccountNumber, UserID)
+    result = easyFinBankService.revokeCloseBankAccount(CorpNum, BankCode, AccountNumber)
 
     print("처리결과 : [%d] %s" % (result.code, result.message))
 except PopbillException as PE:
