@@ -19,7 +19,7 @@ easyFinBankService.UseStaticIP = testValue.UseStaticIP
 easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
-거래내역에 메모를 저장합니다.
+한 건의 거래 내역에 메모를 저장합니다.
 - https://docs.popbill.com/easyfinbank/python/api#SaveMemo
 '''
 
@@ -36,7 +36,7 @@ try:
     TID = "01912181100000000120191231000001"
 
     # 메모
-    Memo = "20211201-Python"
+    Memo = "PYTHON 메모 테스트"
 
     result = easyFinBankService.saveMemo(CorpNum, TID, Memo, UserID)
 

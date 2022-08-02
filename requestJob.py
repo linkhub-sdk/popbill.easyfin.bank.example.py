@@ -19,9 +19,9 @@ easyFinBankService.UseStaticIP = testValue.UseStaticIP
 easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
-계좌 거래내역 수집을 요청합니다. (조회기간 단위 : 최대 1개월)
+계좌 거래내역을 확인하기 위해 팝빌에 수집요청을 합니다. (조회기간 단위 : 최대 1개월)
 - 조회일로부터 최대 3개월 이전 내역까지 조회할 수 있습니다.
-- 수집 요청후 반환받은 작업아이디(JobID)의 유효시간은 1시간 입니다.
+- 반환 받은 작업아이디는 함수 호출 시점부터 1시간 동안 유효합니다.
 - https://docs.popbill.com/easyfinbank/python/api#RequestJob
 '''
 
@@ -35,16 +35,16 @@ try:
     UserID = testValue.testUserID
 
     # 기관코드
-    BankCode = "0039"
+    BankCode = ""
 
     # 계좌번호
-    AccountNumber = "2070064402404"
+    AccountNumber = ""
 
     # 시작일자, 날짜형식(yyyyMMdd)
-    SDate = "20211201"
+    SDate = "20220701"
 
     # 종료일자, 날짜형식(yyyyMMdd)
-    EDate = "20211230"
+    EDate = "20220731"
 
     jobID = easyFinBankService.requestJob(CorpNum, BankCode, AccountNumber, SDate, EDate, UserID)
 

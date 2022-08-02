@@ -35,10 +35,15 @@ try:
     # 수집요청(requestJob)시 발급받은 작업아이디
     JobID = "020010214000000014"
 
-    # 거래유형 배열, I - 입금 / O - 출금
+    # 거래유형 배열 ("I" 와 "O" 중 선택, 다중 선택 가능)
+    # └ I = 입금 , O = 출금
+    # - 미입력 시 전체조회
     TradeType = ["I", "O"]
 
-    # 조회 검색어 - 입금/출금액, 메모, 적요 like 검색 가능
+    # "입·출금액" / "메모" / "비고" 중 검색하고자 하는 값 입력
+    # - 메모 = 거래내역 메모저장(SaveMemo)을 사용하여 저장한 값
+    # - 비고 = EasyFinBankSearchDetail의 remark1, remark2, remark3 값
+    # - 미입력시 전체조회
     SearchString = ""
 
     response = easyFinBankService.summary(CorpNum, JobID, TradeType, SearchString, UserID)
