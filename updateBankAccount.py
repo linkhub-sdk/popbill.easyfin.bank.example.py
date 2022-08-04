@@ -55,7 +55,7 @@ try:
         FastPWD="",
 
         # 메모
-        Memo="",
+        Memo=""
     )
 
 
