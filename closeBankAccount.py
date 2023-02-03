@@ -19,7 +19,7 @@ easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 계좌의 정액제 해지를 요청합니다.
-https://docs.popbill.com/easyfinbank/python/api#CloseBankAccount
+https://developers.popbill.com/reference/easyfinbank/python/api/manage#CloseBankAccount
 '''
 
 try:

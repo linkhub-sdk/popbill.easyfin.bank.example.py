@@ -20,7 +20,7 @@ easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 연동회원 사업자번호에 등록된 담당자(팝빌 로그인 계정) 정보를 확인합니다.
-- https://docs.popbill.com/easyfinbank/python/api#GetContactInfo
+- https://developers.popbill.com/reference/easyfinbank/python/api/member#GetContactInfo
 '''
 
 try:

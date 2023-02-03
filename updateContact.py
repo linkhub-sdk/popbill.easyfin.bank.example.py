@@ -20,7 +20,7 @@ easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 연동회원의 담당자 정보를 수정합니다.
-- https://docs.popbill.com/easyfinbank/python/api#UpdateContact
+- https://developers.popbill.com/reference/easyfinbank/python/api/member#UpdateContact
 '''
 
 try:

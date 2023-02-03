@@ -20,7 +20,7 @@ easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 팝빌에 등록된 계좌 목록을 확인합니다.
-- https://docs.popbill.com/easyfinbank/python/api#ListBankAccount
+- https://developers.popbill.com/reference/easyfinbank/python/api/manage#ListBankAccount
 '''
 
 try:

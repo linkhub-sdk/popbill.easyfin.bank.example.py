@@ -19,7 +19,7 @@ easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 종량제 이용시 등록된 계좌를 삭제합니다.
-- https://docs.popbill.com/easyfinbank/python/api#DeleteBankAccount
+- https://developers.popbill.com/reference/easyfinbank/python/api/manage#DeleteBankAccount
 '''
 
 try:

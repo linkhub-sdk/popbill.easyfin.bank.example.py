@@ -20,7 +20,7 @@ easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 한 건의 거래 내역에 메모를 저장합니다.
-- https://docs.popbill.com/easyfinbank/python/api#SaveMemo
+- https://developers.popbill.com/reference/easyfinbank/python/api/search#SaveMemo
 '''
 
 try:
