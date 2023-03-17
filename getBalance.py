@@ -8,7 +8,7 @@ from popbill import EasyFinBankService, PopbillException
 
 imp.reload(sys)
 try:
-    sys.setdefaultencoding('UTF8')
+    sys.setdefaultencoding("UTF8")
 except Exception as E:
     pass
 
@@ -18,10 +18,10 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
 easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
-'''
+"""
 연동회원의 잔여포인트를 확인합니다.
 - https://developers.popbill.com/reference/easyfinbank/python/api/point#GetBalance
-'''
+"""
 
 try:
     print("=" * 15 + " 연동회원 잔여포인트 확인 " + "=" * 15)

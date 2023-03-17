@@ -7,7 +7,7 @@ from popbill import EasyFinBankService, PopbillException, BankAccountInfo
 
 imp.reload(sys)
 try:
-    sys.setdefaultencoding('UTF8')
+    sys.setdefaultencoding("UTF8")
 except Exception as E:
     pass
 
@@ -17,10 +17,10 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
 easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
-'''
+"""
 ' 신청한 정액제 해지요청을 취소합니다.
 ' - https://developers.popbill.com/reference/easyfinbank/python/api/manage#RevokeCloseBankAccount
-'''
+"""
 
 try:
     print("=" * 15 + " 계좌 정액제 해지신청 취소 " + "=" * 15)

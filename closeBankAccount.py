@@ -7,7 +7,7 @@ from popbill import EasyFinBankService, PopbillException, BankAccountInfo
 
 imp.reload(sys)
 try:
-    sys.setdefaultencoding('UTF8')
+    sys.setdefaultencoding("UTF8")
 except Exception as E:
     pass
 
@@ -17,10 +17,10 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
 easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
-'''
+"""
 계좌의 정액제 해지를 요청합니다.
 https://developers.popbill.com/reference/easyfinbank/python/api/manage#CloseBankAccount
-'''
+"""
 
 try:
     print("=" * 15 + " 계좌 정액제 해지신청 " + "=" * 15)
@@ -43,7 +43,9 @@ try:
     # └ 중도일 경우, 정액제 잔여기간은 일할로 계산되어 포인트 환불(무료 이용기간에 해지하면 전액 환불)
     CloseType = "중도"
 
-    result = easyFinBankService.closeBankAccount(CorpNum, BankCode, AccountNumber, CloseType)
+    result = easyFinBankService.closeBankAccount(
+        CorpNum, BankCode, AccountNumber, CloseType
+    )
 
     print("처리결과 : [%d] %s" % (result.code, result.message))
 except PopbillException as PE:

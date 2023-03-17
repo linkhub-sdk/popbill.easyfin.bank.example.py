@@ -8,7 +8,7 @@ from popbill import EasyFinBankService, PopbillException
 
 imp.reload(sys)
 try:
-    sys.setdefaultencoding('UTF8')
+    sys.setdefaultencoding("UTF8")
 except Exception as E:
     pass
 
@@ -18,10 +18,10 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
 easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
-'''
+"""
 팝빌에 등록된 계좌 목록을 확인합니다.
 - https://developers.popbill.com/reference/easyfinbank/python/api/manage#ListBankAccount
-'''
+"""
 
 try:
     print("=" * 15 + " 계좌 목록 확인 " + "=" * 15 + "\n")
@@ -46,7 +46,7 @@ try:
         print("closeRequestYN (정액제 서비스 해지신청 여부) : %s" % info.closeRequestYN)
         print("useRestrictYN (정액제 서비스 사용제한 여부) : %s" % info.useRestrictYN)
         print("closeOnExpired (정액제 서비스 만료 시 해지 여부) : %s" % info.closeOnExpired)
-        print("unPaidYN (미수금 보유 여부) : %s" % info.unPaidYN+ '\n')
+        print("unPaidYN (미수금 보유 여부) : %s" % info.unPaidYN + "\n")
 
 except PopbillException as PE:
     print("Exception Occur : [%d] %s" % (PE.code, PE.message))

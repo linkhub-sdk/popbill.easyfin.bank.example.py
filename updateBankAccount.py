@@ -8,7 +8,7 @@ from popbill import BankAccountInfo, EasyFinBankService, PopbillException
 
 imp.reload(sys)
 try:
-    sys.setdefaultencoding('UTF8')
+    sys.setdefaultencoding("UTF8")
 except Exception as E:
     pass
 
@@ -18,10 +18,10 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
 easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
-'''
+"""
 팝빌에 등록된 계좌정보를 수정합니다.
 - https://developers.popbill.com/reference/easyfinbank/python/api/manage#UpdateBankAccount
-'''
+"""
 
 try:
     print("=" * 15 + " 계좌정보 수정 " + "=" * 15)
@@ -35,29 +35,21 @@ try:
         # SC은행-0023 / 대구은행-0031 / 부산은행-0032 / 광주은행-0034 / 제주은행-0035 / 전북은행-0037
         # 경남은행-0039 / 새마을금고-0045 / 신협은행-0048 / 우체국-0071 / KEB하나은행-0081 / 신한은행-0088 /씨티은행-0027
         BankCode="",
-
         # 계좌번호 하이픈('-') 제외
         AccountNumber="",
-
         # 계좌비밀번호
         AccountPWD="",
-
         # 계좌 별칭
         AccountName="",
-
         # 인터넷뱅킹 아이디 (국민은행 필수)
         BankID="",
-
         # 조회전용 계정 아이디 (대구은행, 신협, 신한은행 필수)
         FastID="",
-
         # 조회전용 계정 비밀번호 (대구은행, 신협, 신한은행 필수
         FastPWD="",
-
         # 메모
-        Memo=""
+        Memo="",
     )
-
 
     result = easyFinBankService.updateBankAccount(CorpNum, infoObj)
 

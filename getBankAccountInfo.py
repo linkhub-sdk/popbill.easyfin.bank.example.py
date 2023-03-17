@@ -8,7 +8,7 @@ from popbill import EasyFinBankService, PopbillException
 
 imp.reload(sys)
 try:
-    sys.setdefaultencoding('UTF8')
+    sys.setdefaultencoding("UTF8")
 except Exception as E:
     pass
 
@@ -18,10 +18,10 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
 easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
-'''
+"""
 팝빌에 등록된 계좌정보를 확인합니다.
 - https://developers.popbill.com/reference/easyfinbank/python/api/manage#GetBankAccountInfo
-'''
+"""
 
 try:
     print("=" * 15 + " 계좌정보 확인 " + "=" * 15)
@@ -33,10 +33,10 @@ try:
     # 산업은행-0002 / 기업은행-0003 / 국민은행-0004 /수협은행-0007 / 농협은행-0011 / 우리은행-0020
     # SC은행-0023 / 대구은행-0031 / 부산은행-0032 / 광주은행-0034 / 제주은행-0035 / 전북은행-0037
     # 경남은행-0039 / 새마을금고-0045 / 신협은행-0048 / 우체국-0071 / KEB하나은행-0081 / 신한은행-0088 /씨티은행-0027
-    BankCode = '';
+    BankCode = ""
 
     # 계좌번호
-    AccountNumber = '';
+    AccountNumber = ""
 
     info = easyFinBankService.getBankAccountInfo(CorpNum, BankCode, AccountNumber)
 
@@ -54,7 +54,7 @@ try:
     print("closeRequestYN (정액제 서비스 해지신청 여부) : %s" % info.closeRequestYN)
     print("useRestrictYN (정액제 서비스 사용제한 여부) : %s" % info.useRestrictYN)
     print("closeOnExpired (정액제 서비스 만료 시 해지 여부) : %s" % info.closeOnExpired)
-    print("unPaidYN (미수금 보유 여부) : %s" % info.unPaidYN+ '\n')
+    print("unPaidYN (미수금 보유 여부) : %s" % info.unPaidYN + "\n")
 
 except PopbillException as PE:
     print("Exception Occur : [%d] %s" % (PE.code, PE.message))

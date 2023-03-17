@@ -8,7 +8,7 @@ from popbill import EasyFinBankService, PopbillException
 
 imp.reload(sys)
 try:
-    sys.setdefaultencoding('UTF8')
+    sys.setdefaultencoding("UTF8")
 except Exception as E:
     pass
 
@@ -18,10 +18,10 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
 easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
-'''
+"""
 연동회원 사업자번호에 등록된 담당자(팝빌 로그인 계정) 정보를 확인합니다.
 - https://developers.popbill.com/reference/easyfinbank/python/api/member#GetContactInfo
-'''
+"""
 
 try:
     print("=" * 15 + " 담당자 정보 확인 " + "=" * 15)
@@ -30,7 +30,7 @@ try:
     CorpNum = testValue.testCorpNum
 
     # 담당자 아이디
-    contactID = 'testkorea'
+    contactID = "testkorea"
 
     contactInfo = easyFinBankService.getContactInfo(CorpNum, contactID)
 

@@ -8,7 +8,7 @@ from popbill import EasyFinBankService, PopbillException
 
 imp.reload(sys)
 try:
-    sys.setdefaultencoding('UTF8')
+    sys.setdefaultencoding("UTF8")
 except Exception as E:
     pass
 
@@ -18,10 +18,10 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
 easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
-'''
+"""
 한 건의 거래 내역에 메모를 저장합니다.
 - https://developers.popbill.com/reference/easyfinbank/python/api/search#SaveMemo
-'''
+"""
 
 try:
     print("=" * 15 + " 거래내역 메모 저장 " + "=" * 15)

@@ -7,7 +7,7 @@ from popbill import EasyFinBankService, PopbillException, BankAccountInfo
 
 imp.reload(sys)
 try:
-    sys.setdefaultencoding('UTF8')
+    sys.setdefaultencoding("UTF8")
 except Exception as E:
     pass
 
@@ -17,10 +17,10 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
 easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
-'''
+"""
 종량제 이용시 등록된 계좌를 삭제합니다.
 - https://developers.popbill.com/reference/easyfinbank/python/api/manage#DeleteBankAccount
-'''
+"""
 
 try:
     # 팝빌회원 사업자번호
@@ -34,7 +34,6 @@ try:
 
     # 계좌번호 하이픈('-') 제외
     AccountNumber = ""
-
 
     response = easyFinBankService.deleteBankAccount(CorpNum, BankCode, AccountNumber)
 

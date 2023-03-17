@@ -8,7 +8,7 @@ from popbill import EasyFinBankService, PopbillException
 
 imp.reload(sys)
 try:
-    sys.setdefaultencoding('UTF8')
+    sys.setdefaultencoding("UTF8")
 except Exception as E:
     pass
 
@@ -18,10 +18,10 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
 easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
-'''
+"""
 수집 상태 확인(GetJobState API) 함수를 통해 상태 정보가 확인된 작업아이디를 활용하여 계좌 거래 내역을 조회합니다.
 - https://developers.popbill.com/reference/easyfinbank/python/api/search#Search
-'''
+"""
 
 try:
     print("=" * 15 + " 수집 결과 조회 " + "=" * 15)
@@ -52,7 +52,9 @@ try:
     # 정렬방향 D-내림차순, A-오름차순
     Order = "D"
 
-    response = easyFinBankService.search(CorpNum, JobID, TradeType, SearchString, Page, PerPage, Order)
+    response = easyFinBankService.search(
+        CorpNum, JobID, TradeType, SearchString, Page, PerPage, Order
+    )
 
     print("code (응답코드) : %s " % response.code)
     print("message (응답메시지) : %s " % response.message)
@@ -74,7 +76,7 @@ try:
         print("remark1 (비고1) : %s" % info.remark1)
         print("remark2 (비고2) : %s" % info.remark2)
         print("remark3 (비고3) : %s" % info.remark3)
-        print("memo (메모) : %s \n" % info.memo )
+        print("memo (메모) : %s \n" % info.memo)
 
 except PopbillException as PE:
     print("Exception Occur : [%d] %s" % (PE.code, PE.message))

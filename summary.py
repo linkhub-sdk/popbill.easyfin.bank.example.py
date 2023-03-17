@@ -8,7 +8,7 @@ from popbill import EasyFinBankService, PopbillException
 
 imp.reload(sys)
 try:
-    sys.setdefaultencoding('UTF8')
+    sys.setdefaultencoding("UTF8")
 except Exception as E:
     pass
 
@@ -18,11 +18,11 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
 easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
-'''
+"""
 수집 상태 확인(GetJobState API) 함수를 통해 상태 정보가 확인된 작업아이디를 활용하여 계좌 거래내역의 요약 정보를 조회합니다.
 - 요약 정보 : 입·출 금액 합계, 입·출 거래 건수
 - https://developers.popbill.com/reference/easyfinbank/python/api/search#Summary
-'''
+"""
 
 try:
     print("=" * 15 + "수집 결과 요약정보 조회 " + "=" * 15)
@@ -45,7 +45,6 @@ try:
     SearchString = ""
 
     response = easyFinBankService.summary(CorpNum, JobID, TradeType, SearchString)
-
 
     print("count (수집 결과 건수) : %s " % response.count)
     print("cntAccIn (입금거래 건수) : %s " % response.cntAccIn)

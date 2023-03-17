@@ -8,7 +8,7 @@ from popbill import EasyFinBankService, PopbillException
 
 imp.reload(sys)
 try:
-    sys.setdefaultencoding('UTF8')
+    sys.setdefaultencoding("UTF8")
 except Exception as E:
     pass
 
@@ -18,10 +18,10 @@ easyFinBankService.IPRestrictOnOff = testValue.IPRestrictOnOff
 easyFinBankService.UseStaticIP = testValue.UseStaticIP
 easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
-'''
+"""
 연동회원의 회사정보를 확인합니다.
 - https://developers.popbill.com/reference/easyfinbank/python/api/member#GetCorpInfo
-'''
+"""
 
 try:
     print("=" * 15 + " 회사정보 확인 " + "=" * 15)
