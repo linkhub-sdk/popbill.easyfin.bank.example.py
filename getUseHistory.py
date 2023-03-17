@@ -49,7 +49,20 @@ try:
     UserID = testValue.testUserID
 
     useHistoryResult = easyFinBankService.getUseHistory(
-        CorpNum, SDate, EDate, Page, PerPage, Order, UserID
+        # 팝빌회원 사업자번호
+        CorpNum,
+        # 조회 기간의 시작일자
+        SDate,
+        # 조회 기간의 종료일자
+        EDate,
+        # 목록 페이지번호
+        Page,
+        # 페이지당 표시할 목록 개수
+        PerPage,
+        # 거래일자를 기준으로 하는 목록 정렬 방향
+        Order,
+        # 팝빌회원 아이디
+        UserID,
     )
 
     print(" code (요청에 대한 응답 상태 코드) : %s" % useHistoryResult.code)

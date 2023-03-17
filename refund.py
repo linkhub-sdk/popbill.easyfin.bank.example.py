@@ -32,12 +32,12 @@ try:
 
     # 환불 신청 객체 정보
     refundForm = RefundForm(
-        contactname="환불신청테스트",
+        contactName="환불신청테스트",
         tel="01077777777",
-        requestpoint="10",
-        accountbank="국민",
-        accountnum="123123123-123",
-        accountname="예금주",
+        requestPoint="10",
+        accountBank="국민",
+        accountNum="123123123-123",
+        accountName="예금주",
         reason="테스트 환불 사유",
     )
 
