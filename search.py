@@ -63,7 +63,7 @@ try:
     print("pageNum (페에지 번호) : %s " % response.pageNum)
     print("pageCount (페이지 개수) : %s " % response.pageCount)
     print("lastScrapDT (최종 조회일시) : %s \n" % response.lastScrapDT)
-    print("balance (현재 잔액) : %s \n" % response.lastScrapDT)
+    print("balance (현재 잔액) : %s \n" % response.balance)
 
     for info in response.list:
         print("\n==============거래내역 정보==============")
