@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 # code for console Encoding difference. Dont' mind on it
-import sys
 import imp
+import sys
+
 import testValue
-from popbill import EasyFinBankService, PopbillException, BankAccountInfo
+from popbill import BankAccountInfo, EasyFinBankService, PopbillException
 
 imp.reload(sys)
 try:
