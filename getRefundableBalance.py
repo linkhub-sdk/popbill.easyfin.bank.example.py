@@ -10,7 +10,7 @@ except Exception as E:
     pass
 
 import testValue
-from popbill import EasyFinBankService, PaymentForm, PopbillException
+from popbill import EasyFinBankService, PopbillException
 
 easyFinBankService = EasyFinBankService(testValue.LinkID, testValue.SecretKey)
 easyFinBankService.IsTest = testValue.IsTest

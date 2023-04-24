@@ -3,8 +3,9 @@
 import imp
 import sys
 
-import testValue
 from popbill import CorpInfo, EasyFinBankService, PopbillException
+
+import testValue
 
 imp.reload(sys)
 try:

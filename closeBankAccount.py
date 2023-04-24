@@ -3,8 +3,9 @@
 import imp
 import sys
 
+from popbill import EasyFinBankService, PopbillException
+
 import testValue
-from popbill import BankAccountInfo, EasyFinBankService, PopbillException
 
 imp.reload(sys)
 try:

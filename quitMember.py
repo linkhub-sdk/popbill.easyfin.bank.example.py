@@ -10,7 +10,7 @@ except Exception as E:
     pass
 
 import testValue
-from popbill import EasyFinBankService, PaymentForm, PopbillException
+from popbill import EasyFinBankService, PopbillException
 
 easyFinBankService = EasyFinBankService(testValue.LinkID, testValue.SecretKey)
 easyFinBankService.IsTest = testValue.IsTest
@@ -36,7 +36,7 @@ try:
     # 팝빌회원 팝빌 아이디
     UserID = testValue.testUserID
 
-    response = easyFinBankService.QuitREquest(CorpNum, QuitReason, UserID)
+    response = easyFinBankService.QuitRequest(CorpNum, QuitReason, UserID)
 
     print(" refundableBalance (환불 가능 포인트) : %s" % response.refundableBalance)
 
