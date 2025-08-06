@@ -21,7 +21,7 @@ easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 """
 연동회원의 담당자 정보를 수정합니다.
-- https://developers.popbill.com/reference/easyfinbank/python/api/member#UpdateContact
+- https://developers.popbill.com/reference/easyfinbank/python/common-api/member#UpdateContact
 """
 
 try:
@@ -35,20 +35,26 @@ try:
 
     # 담당자 정보
     updateInfo = ContactInfo(
-        # 담당자 아이디
+
+        # 아이디
         id=UserID,
+
         # 담당자 성명 (최대 100자)
         personName="담당자 성명",
-        # 연락처 (최대 20자)
+
+        # 담당자 휴대폰 (최대 20자)
         tel="",
-        # 메일주소 (최대 100자)
+
+        # 담당자 메일 (최대 100자)
         email="",
-        # 담당자 조회권한, 1(개인) 2(읽기) 3(회사)
-        searchRole=1,
+
+        # 권한, 1(개인) 2(읽기) 3(회사)
+        searchRole=3,
     )
 
     result = easyFinBankService.updateContact(CorpNum, updateInfo)
 
     print("처리결과 : [%d] %s" % (result.code, result.message))
+
 except PopbillException as PE:
     print("Exception Occur : [%d] %s" % (PE.code, PE.message))

@@ -21,7 +21,7 @@ easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 """
 계좌조회 API 연동서비스 과금정보를 확인합니다.
-- https://developers.popbill.com/reference/easyfinbank/python/api/point#GetChargeInfo
+- https://developers.popbill.com/reference/easyfinbank/python/common-api/point#GetChargeInfo
 """
 
 try:

@@ -47,7 +47,7 @@ try:
 
     response = easyFinBankService.summary(CorpNum, JobID, TradeType, SearchString)
 
-    print("count (수집 결과 건수) : %s " % response.count)
+    print("count (수집 건수) : %s " % response.count)
     print("cntAccIn (입금거래 건수) : %s " % response.cntAccIn)
     print("cntAccOut (출금거래 건수) : %s " % response.cntAccOut)
     print("totalAccIn (입금액 합계) : %s " % response.totalAccIn)

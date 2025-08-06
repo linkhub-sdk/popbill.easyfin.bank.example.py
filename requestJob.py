@@ -39,14 +39,12 @@ try:
     AccountNumber = ""
 
     # 시작일자, 날짜형식(yyyyMMdd)
-    SDate = "20220701"
+    SDate = "20250801"
 
     # 종료일자, 날짜형식(yyyyMMdd)
-    EDate = "20220731"
+    EDate = "20250831"
 
-    jobID = easyFinBankService.requestJob(
-        CorpNum, BankCode, AccountNumber, SDate, EDate
-    )
+    jobID = easyFinBankService.requestJob(CorpNum, BankCode, AccountNumber, SDate, EDate)
 
     print("작업아이디(jobID) : " + jobID)
 

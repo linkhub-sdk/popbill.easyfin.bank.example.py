@@ -21,7 +21,7 @@ easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 """
 계좌조회 정액제 서비스 상태를 확인합니다.
-- https://developers.popbill.com/reference/easyfinbank/python/api/point#GetFlatRateState
+- https://developers.popbill.com/reference/easyfinbank/python/common-api/point#GetFlatRateState
 """
 
 try:

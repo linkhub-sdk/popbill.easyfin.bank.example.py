@@ -53,14 +53,12 @@ try:
     # 정렬방향 D-내림차순, A-오름차순
     Order = "D"
 
-    response = easyFinBankService.search(
-        CorpNum, JobID, TradeType, SearchString, Page, PerPage, Order
-    )
+    response = easyFinBankService.search(CorpNum, JobID, TradeType, SearchString, Page, PerPage, Order)
 
     print("code (응답코드) : %s " % response.code)
     print("message (응답메시지) : %s " % response.message)
     print("total (검색결과 건수) : %s " % response.total)
-    print("perPage (페이지당 검색개수) : %s " % response.perPage)
+    print("perPage (페이지당 당 목록 건수) : %s " % response.perPage)
     print("pageNum (페에지 번호) : %s " % response.pageNum)
     print("pageCount (페이지 개수) : %s " % response.pageCount)
     print("lastScrapDT (최종 조회일시) : %s \n" % response.lastScrapDT)
@@ -70,7 +68,7 @@ try:
         print("\n==============거래내역 정보==============")
         print("tid (거래내역 아이디) : %s" % info.tid)
         print("trdate (거래일자) : %s" % info.trdate)
-        print("trserial (거래일자별 거래내역 순번) : %s" % info.trserial)
+        print("trserial (거래일련번호) : %s" % info.trserial)
         print("trdt (거래일시) : %s" % info.trdt)
         print("accIn (입금액) : %s" % info.accIn)
         print("accOut (출금액) : %s" % info.accOut)
@@ -78,7 +76,10 @@ try:
         print("remark1 (비고1) : %s" % info.remark1)
         print("remark2 (비고2) : %s" % info.remark2)
         print("remark3 (비고3) : %s" % info.remark3)
+        print("remark4 (비고4) : %s" % info.remark4)
+        print("regDT (등록일시) : %s" % info.regDT)
         print("memo (메모) : %s \n" % info.memo)
 
 except PopbillException as PE:
+
     print("Exception Occur : [%d] %s" % (PE.code, PE.message))

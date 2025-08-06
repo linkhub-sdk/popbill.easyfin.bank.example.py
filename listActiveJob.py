@@ -35,10 +35,10 @@ try:
 
     for info in response:
         print("jobID (작업아이디) : %s" % info.jobID)
-        print("jobState (수집상태) : %s" % info.jobState)
+        print("jobState (수집 상태) : %s" % info.jobState)
         print("startDate (시작일자) : %s" % info.startDate)
         print("endDate (종료일자) : %s" % info.endDate)
-        print("errorCode (오류코드) : %s" % info.errorCode)
+        print("errorCode (수집 결과코드) : %s" % info.errorCode)
         print("errorReason (오류메시지) : %s" % info.errorReason)
         print("jobStartDT (작업 시작일시) : %s" % info.jobStartDT)
         print("jobEndDT (작업 종료일시) : %s" % info.jobEndDT)

@@ -20,7 +20,7 @@ easyFinBankService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 """
 연동회원 포인트를 환불 신청합니다.
-- https://developers.popbill.com/reference/easyfinbank/python/api/point#Refund
+- https://developers.popbill.com/reference/easyfinbank/python/common-api/point#Refund
 """
 
 try:
